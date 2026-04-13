@@ -1,0 +1,58 @@
+/**
+ * Hero Block Styles (Frontend & Editor)
+ */
+
+.wp-block-d-theme-hero-block {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-block__content {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-block__title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.hero-block__description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -0.01em;
+}
+
+.hero-block__button {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}
+
+.hero-block__button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-block__title {
+        font-size: 2em !important;
+    }
+
+    .hero-block__description {
+        font-size: 1em !important;
+    }
+
+    .hero-block__content {
+        padding: 20px !important;
+    }
+}

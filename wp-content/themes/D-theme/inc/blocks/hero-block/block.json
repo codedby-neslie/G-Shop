@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "d-theme/hero-block",
+  "title": "Hero Block",
+  "description": "A modern hero section block with image, title, and description",
+  "category": "d-theme",
+  "icon": "format-image",
+  "example": {
+    "attributes": {
+      "title": "Welcome to Our Site",
+      "description": "This is a hero section block",
+      "buttonText": "Learn More",
+      "buttonUrl": "#"
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Hero Title"
+    },
+    "description": {
+      "type": "string",
+      "default": "This is a description for the hero section"
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Learn More"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#0066cc"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "imageId": {
+      "type": "number",
+      "default": 0
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "height": {
+      "type": "string",
+      "default": "500px"
+    }
+  },
+  "textdomain": "d-theme",
+  "editorScript": "d-theme-hero-block-editor",
+  "editorStyle": "d-theme-hero-block-editor-style",
+  "style": "d-theme-hero-block-style",
+  "render": "file:./render.php"
+}
