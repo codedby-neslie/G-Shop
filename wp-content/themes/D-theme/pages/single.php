@@ -77,10 +77,10 @@ while (have_posts()) {
 
     <?php
     // Author Box
-    get_template_part('pages/template-parts/author-box');
+    get_template_part('pages/template-parts/single-parts/author-box');
 
     // Related Posts
-    get_template_part('pages/template-parts/related-posts');
+    get_template_part('pages/template-parts/single-parts/related-posts');
 
     // Comments
     if (comments_open() || get_comments_number()) {

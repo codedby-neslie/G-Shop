@@ -25,7 +25,7 @@
 
         while (have_posts()) {
             the_post();
-            get_template_part('pages/archive/post-card');
+            get_template_part('pages/template-parts/archive-parts/post-card');
         }
 
         echo '</div>';
@@ -37,7 +37,7 @@
             'next_text'          => __('Next &rarr;', 'd-theme'),
         ]);
     } else {
-        get_template_part('pages/archive/no-posts');
+        get_template_part('pages/template-parts/archive-parts/no-posts');
     }
     ?>
 </div>

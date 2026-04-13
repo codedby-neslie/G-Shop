@@ -1,15 +1,15 @@
 <?php
 /**
- * Archive Template
+ * Blog Archive Template
  *
- * Display archive pages (blog posts, categories, tags, etc.)
+ * Display blog post archive pages (categories, tags, author archives, etc.)
  *
  * @package D_Theme
  * @since 1.0.0
  */
 ?>
 
-<div class="archive-wrapper">
+<div class="archive-wrapper archive-blog">
     <header class="archive-header mb-3">
         <h1 class="archive-title">
             <?php
@@ -28,7 +28,7 @@
             } elseif (is_search()) {
                 printf(esc_html__('Search Results for: %s', 'd-theme'), '<span>' . get_search_query() . '</span>');
             } else {
-                echo 'Blog';
+                echo __('Blog', 'd-theme');
             }
             ?>
         </h1>

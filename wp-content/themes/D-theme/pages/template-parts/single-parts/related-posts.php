@@ -35,7 +35,7 @@ if ($categories) {
                 <?php
                 while ($related_posts->have_posts()) {
                     $related_posts->the_post();
-                    get_template_part('pages/archive/post-card');
+                    get_template_part('pages/template-parts/archive-parts/post-card');
                 }
                 ?>
             </div>
