@@ -76,7 +76,6 @@ if (!function_exists('d_theme_register_blog_cpt')) {
                 'author',
                 'thumbnail',
                 'excerpt',
-                'comments',
                 'revisions',
                 'custom-fields',
             ],
